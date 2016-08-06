@@ -22,6 +22,13 @@
 		</snapshotRepository>
 	</distributionManagement>
 	
+<scm>
+	<connection>scm:git:git@github.com:aspiringmaven/mavenrelease.git</connection>
+	<url>scm:git:git@github.com:aspiringmaven/mavenrelease.git</url>
+	<developerConnection>scm:git:git@github.com:aspiringmaven/mavenrelease.git</developerConnection>
+	<tag>PSI1-BETA</tag>
+  </scm>
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -43,6 +50,14 @@
 		</dependency>
 	</dependencies>
 
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugin</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.2</version>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
