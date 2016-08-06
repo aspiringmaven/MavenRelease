@@ -3,11 +3,25 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.sumitkawatra</groupId>
 	<artifactId>mavenrelease</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
 	<name>Release Automation using Maven.</name>
 
-
+	<distributionManagement>
+		<repository>
+			<name>Place (mvn deploy) baseline/version binaries at this repository.</name>
+			<id>SumitKawatra-PC-Stable</id>
+			<url>file://D:\mvnbuild\stable</url>
+			<uniqueVersion>true</uniqueVersion>
+		</repository>
+		<snapshotRepository>
+			<name>Place (mvn deploy) snapshots binaries at this repository.</name>
+			<id>SumitKawatra-PC-Snapshots</id>
+			<url>file://D:\mvnbuild\snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -21,5 +35,14 @@
 			<version>2.3.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+
+
+
 </project>
