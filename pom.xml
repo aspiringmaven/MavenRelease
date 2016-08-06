@@ -26,7 +26,6 @@
 		<connection>scm:git:git@github-ld:aspiringmaven/mavenrelease.git</connection>
 		<url>scm:git:git@github-ld:aspiringmaven/mavenrelease.git</url>
 		<developerConnection>scm:git:git@github-ld:aspiringmaven/mavenrelease.git</developerConnection>
-		<tag>PSI1-BETA</tag>
 	</scm>
 
 	<dependencies>
