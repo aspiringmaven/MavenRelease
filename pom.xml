@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.sumitkawatra</groupId>
 	<artifactId>mavenrelease</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Release Automation using Maven.</name>
 
@@ -21,14 +21,14 @@
 			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 	</distributionManagement>
-	
-<scm>
-	<connection>scm:git:git@github.com:aspiringmaven/mavenrelease.git</connection>
-	<url>scm:git:git@github.com:aspiringmaven/mavenrelease.git</url>
-	<developerConnection>scm:git:git@github.com:aspiringmaven/mavenrelease.git</developerConnection>
-	<tag>PSI1-BETA</tag>
-  </scm>
-	
+
+	<scm>
+		<connection>scm:git:git@github.com:aspiringmaven/mavenrelease.git</connection>
+		<url>scm:git:git@github.com:aspiringmaven/mavenrelease.git</url>
+		<developerConnection>scm:git:git@github.com:aspiringmaven/mavenrelease.git</developerConnection>
+		<tag>PSI1-BETA</tag>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
